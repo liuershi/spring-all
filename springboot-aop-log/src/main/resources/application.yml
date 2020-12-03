@@ -1,0 +1,7 @@
+spring:
+  datasource:
+    url: jdbc:mysql://192.168.13.165/aop_log?createDatabaseIfNotExist=true&useSSL=false&serverTimezone=UTC
+    username: root
+    password: Infocore`1q
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    type: com.alibaba.druid.pool.DruidDataSource
