@@ -1,0 +1,24 @@
+spring:
+  datasource:
+    username: root
+    password: Infocore`1q
+    url: jdbc:mysql://192.168.13.165/springboot_mybatis_plus?createDatabaseIfNotExist=true&useSSL=false&serverTimezone=UTC
+    type: com.alibaba.druid.pool.DruidDataSource
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+# 在控制台增加sql的打印记录
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+    # 是否开启驼峰校验，mybatis-plus中默认开启，而mybatis中则默认关闭
+    map-underscore-to-camel-case: true
+  # 设置mapper文件的路径，在项目开发中mybatis-plus提供的方法不能够满足使用时，类似之前mybatis的xml文件自定义sql
+  mapper-locations: classpath:mapper/*.xml
+  # 简化xml中resultType，相当于在实体类前面加上了对应的包路径
+  type-aliases-package: cn.infocore.springboot.domain
+  global-config:
+    db-config:
+      id-type: auto # 全局的ID生成策略，不需要在每个实体类上都注明注解的生成策略
+      logic-delete-value: 1 # 逻辑删除的值
+      logic-not-delete-value: 0 # 逻辑未删除的值
+  type-enums-package: cn.infocore.springboot.myenum # 扫描枚举类在使用时自动做转换

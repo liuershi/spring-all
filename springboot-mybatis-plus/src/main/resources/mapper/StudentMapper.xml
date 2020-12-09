@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.infocore.springboot.generate.auto.more_select.mapper.StudentMapper">
+    <select id="queryStudentInfoById" resultType="cn.infocore.springboot.generate.auto.more_select.vo.QuestionStudentVO">
+        SELECT
+            s.id, s.name, s.user_name, s.sex, q.last_modification, q.content
+        FROM tb_student s LEFT JOIN tb_question q ON s.id = q.student_id ${ew.customSqlSegment}
+    </select>
+</mapper>
