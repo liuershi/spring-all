@@ -1,0 +1,523 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="c45f2506-286d-4880-b506-a076e4574be1" name="Default Changelist" comment="springboot整合mybatis-plus">
+      <change afterPath="$PROJECT_DIR$/springboot-redis/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-redis/src/main/java/cn/infocore/springboot/redis/ApplicationRedisMain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-redis/src/main/java/cn/infocore/springboot/redis/config/MyRedisConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-redis/src/main/java/cn/infocore/springboot/redis/controller/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-redis/src/main/java/cn/infocore/springboot/redis/core/MybatisRedisCache.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-redis/src/main/java/cn/infocore/springboot/redis/core/SpringUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-redis/src/main/java/cn/infocore/springboot/redis/domain/UserDO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-redis/src/main/java/cn/infocore/springboot/redis/mapper/UserMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-redis/src/main/java/cn/infocore/springboot/redis/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-redis/src/main/java/cn/infocore/springboot/redis/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-redis/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-redis/src/test/java/cn/infocore/springboot/redis/TestRedis.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="13.165" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="13.165" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="13.165" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="springboot_mybatis_plus: schema" type="76f4a085:MysqlImplModel$Schema" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="AnnotationType" />
+        <option value="Enum" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MavenRunner">
+    <option name="skipTests" value="true" />
+  </component>
+  <component name="ProjectId" id="1l7sxbWTueyBbt8gcSOrEyYvqts" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="jdk.selected.JAVA_MODULE" value="1.8" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.32163742" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="cn.infocore.springboot.redis.core" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="cn.infocore.springboot.redis.domain" />
+      <recent name="cn.infocore.springboot.test" />
+      <recent name="cn.infocore.springboot.convert" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Program Files (x86)\WXWork\zhangwei\study-project\spring-all\springboot-mybatis-plus\src\main\resources\mapper" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Spring Boot.ApplicationRedisMain">
+    <configuration name="TestRedis" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="springboot-redis" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.infocore.springboot.redis.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="cn.infocore.springboot.redis" />
+      <option name="MAIN_CLASS_NAME" value="cn.infocore.springboot.redis.TestRedis" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestRedis.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="springboot-redis" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.infocore.springboot.redis.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="cn.infocore.springboot.redis" />
+      <option name="MAIN_CLASS_NAME" value="cn.infocore.springboot.redis.TestRedis" />
+      <option name="METHOD_NAME" value="test1" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestRedis.test2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="springboot-redis" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.infocore.springboot.redis.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="cn.infocore.springboot.redis" />
+      <option name="MAIN_CLASS_NAME" value="cn.infocore.springboot.redis.TestRedis" />
+      <option name="METHOD_NAME" value="test2" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestRedis.test3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="springboot-redis" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.infocore.springboot.redis.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="cn.infocore.springboot.redis" />
+      <option name="MAIN_CLASS_NAME" value="cn.infocore.springboot.redis.TestRedis" />
+      <option name="METHOD_NAME" value="test3" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ApplicationRedisMain" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="springboot-redis" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.infocore.springboot.redis.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="cn.infocore.springboot.redis.ApplicationRedisMain" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.ApplicationRedisMain" />
+        <item itemvalue="JUnit.TestRedis.test3" />
+        <item itemvalue="JUnit.TestRedis.test2" />
+        <item itemvalue="JUnit.TestRedis" />
+        <item itemvalue="JUnit.TestRedis.test1" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c45f2506-286d-4880-b506-a076e4574be1" name="Default Changelist" comment="" />
+      <created>1606959711761</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1606959711761</updated>
+      <workItem from="1606959713154" duration="5939000" />
+      <workItem from="1606974379676" duration="3658000" />
+      <workItem from="1606978816231" duration="1307000" />
+      <workItem from="1606980130983" duration="12716000" />
+      <workItem from="1606997172818" duration="547000" />
+      <workItem from="1606997726601" duration="6822000" />
+      <workItem from="1607157351903" duration="16333000" />
+      <workItem from="1607412035817" duration="26671000" />
+      <workItem from="1607500660526" duration="146000" />
+      <workItem from="1607500826664" duration="5401000" />
+      <workItem from="1607590289740" duration="4100000" />
+      <workItem from="1608019637595" duration="8805000" />
+      <workItem from="1608043688827" duration="29000" />
+      <workItem from="1608043742121" duration="120000" />
+      <workItem from="1608043885751" duration="108000" />
+      <workItem from="1608044018342" duration="1450000" />
+    </task>
+    <task id="LOCAL-00001" summary="了解springboot，第一个hello world">
+      <created>1606974629489</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1606974629489</updated>
+    </task>
+    <task id="LOCAL-00002" summary="使用MapStruct，不同层之间对象属性的映射工具框架">
+      <created>1606985369835</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1606985369835</updated>
+    </task>
+    <task id="LOCAL-00003" summary="自定义注解实现日志记录">
+      <created>1606998279821</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1606998279821</updated>
+    </task>
+    <task id="LOCAL-00004" summary="springboot整合mybatis-plus">
+      <created>1607505371146</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1607505371146</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="1">
+          <value>
+            <State>
+              <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="HEAD" />
+                      </list>
+                    </value>
+                  </entry>
+                  <entry key="roots">
+                    <value>
+                      <list>
+                        <option value="$PROJECT_DIR$" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="OPEN_TABS">
+      <set>
+        <option value="1" />
+      </set>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="了解springboot，第一个hello world" />
+    <MESSAGE value="使用MapStruct，不同层之间对象属性的映射工具框架" />
+    <MESSAGE value="自定义注解记录日志" />
+    <MESSAGE value="自定义注解实现日志记录" />
+    <MESSAGE value="springboot整合mybatis-plus" />
+    <option name="LAST_COMMIT_MESSAGE" value="springboot整合mybatis-plus" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="552" y="178" key="#Project_Structure" timestamp="1606988569251">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="178" key="#Project_Structure/0.0.1920.1040@0.0.1920.1040" timestamp="1606988569251" />
+    <state x="275" y="22" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1607249055731">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="275" y="22" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1607249055731" />
+    <state x="680" y="322" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1606959757734">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="680" y="322" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1606959757734" />
+    <state x="765" y="236" key="#com.intellij.ide.util.MemberChooser" timestamp="1608035667184">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="544" y="147" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1607441263039" />
+    <state x="765" y="236" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1608035667184" />
+    <state x="690" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1607494099422">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="690" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1607494099422" />
+    <state x="395" y="112" key="CommitChangelistDialog2" timestamp="1607505421286">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="395" y="112" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1607505421286" />
+    <state width="414" height="327" key="DebuggerActiveHint" timestamp="1608044729985">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="414" height="327" key="DebuggerActiveHint/0.0.1366.728@0.0.1366.728" timestamp="1608044729985" />
+    <state width="453" height="466" key="DebuggerActiveHint/0.0.1920.1040@0.0.1920.1040" timestamp="1606964734133" />
+    <state x="184" y="86" key="DiffContextDialog" timestamp="1606974597542">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="184" y="86" key="DiffContextDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1606974597542" />
+    <state x="740" y="274" key="FileChooserDialogImpl" timestamp="1607572507353">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1607572507353" />
+    <state width="1323" height="293" key="GridCell.Tab.0.bottom" timestamp="1608044803152">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="293" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1608044803152" />
+    <state width="1877" height="408" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1608036304176" />
+    <state width="1323" height="293" key="GridCell.Tab.0.center" timestamp="1608044803152">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="293" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1608044803152" />
+    <state width="1877" height="408" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1608036304176" />
+    <state width="1323" height="293" key="GridCell.Tab.0.left" timestamp="1608044803152">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="293" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1608044803152" />
+    <state width="1877" height="408" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1608036304176" />
+    <state width="1323" height="293" key="GridCell.Tab.0.right" timestamp="1608044803152">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="293" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1608044803152" />
+    <state width="1877" height="408" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1608036304176" />
+    <state width="1323" height="293" key="GridCell.Tab.1.bottom" timestamp="1608044803152">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="293" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1608044803152" />
+    <state width="1877" height="408" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1608036304176" />
+    <state width="1323" height="293" key="GridCell.Tab.1.center" timestamp="1608044803152">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="293" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1608044803152" />
+    <state width="1877" height="408" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1608036304176" />
+    <state width="1323" height="293" key="GridCell.Tab.1.left" timestamp="1608044803152">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="293" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1608044803152" />
+    <state width="1877" height="408" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1608036304176" />
+    <state width="1323" height="293" key="GridCell.Tab.1.right" timestamp="1608044803152">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="293" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1608044803152" />
+    <state width="1877" height="408" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1608036304176" />
+    <state width="1323" height="293" key="GridCell.Tab.2.bottom" timestamp="1608044803152">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="293" key="GridCell.Tab.2.bottom/0.0.1366.728@0.0.1366.728" timestamp="1608044803152" />
+    <state width="1877" height="454" key="GridCell.Tab.2.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1608034222253" />
+    <state width="1323" height="293" key="GridCell.Tab.2.center" timestamp="1608044803152">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="293" key="GridCell.Tab.2.center/0.0.1366.728@0.0.1366.728" timestamp="1608044803152" />
+    <state width="1877" height="454" key="GridCell.Tab.2.center/0.0.1920.1040@0.0.1920.1040" timestamp="1608034222252" />
+    <state width="1323" height="293" key="GridCell.Tab.2.left" timestamp="1608044803152">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="293" key="GridCell.Tab.2.left/0.0.1366.728@0.0.1366.728" timestamp="1608044803152" />
+    <state width="1877" height="454" key="GridCell.Tab.2.left/0.0.1920.1040@0.0.1920.1040" timestamp="1608034222252" />
+    <state width="1323" height="293" key="GridCell.Tab.2.right" timestamp="1608044803152">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="293" key="GridCell.Tab.2.right/0.0.1366.728@0.0.1366.728" timestamp="1608044803152" />
+    <state width="1877" height="454" key="GridCell.Tab.2.right/0.0.1920.1040@0.0.1920.1040" timestamp="1608034222253" />
+    <state x="540" y="263" key="IDE.errors.dialog" timestamp="1607308066090">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="540" y="263" key="IDE.errors.dialog/0.0.1920.1040@0.0.1920.1040" timestamp="1607308066090" />
+    <state x="549" y="230" key="RollbackChangesDialog" timestamp="1606985513482">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="549" y="230" key="RollbackChangesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1606985513482" />
+    <state x="440" y="94" key="SettingsEditor" timestamp="1607590720551">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="440" y="94" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1607590720551" />
+    <state x="681" y="261" width="582" height="524" key="StructurePopup" timestamp="1608031054597">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="485" y="183" width="582" height="367" key="StructurePopup/0.0.1366.728@0.0.1366.728" timestamp="1607183570946" />
+    <state x="681" y="261" width="582" height="524" key="StructurePopup/0.0.1920.1040@0.0.1920.1040" timestamp="1608031054597" />
+    <state x="640" y="224" key="VCS.ChangeListViewerDialog" timestamp="1606985585866">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="640" y="224" key="VCS.ChangeListViewerDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1606985585866" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1607505377594">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1607505377594" />
+    <state width="691" height="372" key="XDebugger.FullValuePopup" timestamp="1608044652158">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="691" height="372" key="XDebugger.FullValuePopup/0.0.1366.728@0.0.1366.728" timestamp="1608044652158" />
+    <state x="640" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1607500841016">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="640" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1607500841016" />
+    <state x="499" y="126" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1606981668556">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="499" y="126" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1606981668556" />
+    <state x="752" y="437" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1607591097943">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="752" y="437" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1607591097943" />
+    <state x="653" y="222" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1607500767902">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="653" y="222" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1607500767902" />
+    <state x="661" y="311" key="git4idea.merge.GitMergeDialog" timestamp="1606985603995">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="661" y="311" key="git4idea.merge.GitMergeDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1606985603995" />
+    <state x="661" y="311" key="git4idea.merge.GitPullDialog" timestamp="1606985626331">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="661" y="311" key="git4idea.merge.GitPullDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1606985626331" />
+    <state x="673" y="414" key="git4idea.ui.GitResetDialog" timestamp="1606985586682">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="673" y="414" key="git4idea.ui.GitResetDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1606985586682" />
+    <state x="334" y="215" key="new project wizard" timestamp="1607590733252">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="115" y="117" key="new project wizard/0.0.1366.728@0.0.1366.728" timestamp="1607005569317" />
+    <state x="334" y="215" key="new project wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1607590733252" />
+    <state x="661" y="147" key="refactoring.ChangeSignatureDialog" timestamp="1607501902854">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="661" y="147" key="refactoring.ChangeSignatureDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1607501902854" />
+    <state x="616" y="240" key="run.anything.popup" timestamp="1606978022566">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1606978022566" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1608021823244">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="443" y="158" width="672" height="475" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1607442048258" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1608021823244" />
+    <state x="640" y="202" key="spring file set editor" timestamp="1606988720437">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="640" y="202" key="spring file set editor/0.0.1920.1040@0.0.1920.1040" timestamp="1606988720437" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/springboot-mapstruct/src/main/java/cn/infocore/springboot/test/SimpleSourceDestinationTest.java</url>
+          <line>26</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-autoconfigure/2.2.2.RELEASE/spring-boot-autoconfigure-2.2.2.RELEASE-sources.jar!/org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration.java</url>
+          <line>84</line>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis/3.5.6/mybatis-3.5.6-sources.jar!/org/apache/ibatis/session/Configuration.java</url>
+          <line>677</line>
+          <option name="timeStamp" value="21" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/com/baomidou/mybatis-plus-core/3.4.1/mybatis-plus-core-3.4.1-sources.jar!/com/baomidou/mybatisplus/core/metadata/IPage.java</url>
+          <line>33</line>
+          <option name="timeStamp" value="22" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/springboot-mybatis-plus/src/main/java/cn/infocore/springboot/generate/auto/more_select/controller/StudentController.java</url>
+          <line>34</line>
+          <option name="timeStamp" value="25" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/springboot-mybatis-plus/src/main/java/cn/infocore/springboot/generate/auto/more_select/service/impl/StudentServiceImpl.java</url>
+          <line>26</line>
+          <option name="timeStamp" value="26" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

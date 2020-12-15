@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/spring-all.iml" filepath="$PROJECT_DIR$/.idea/spring-all.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot-aop-log/springboot-aop-log.iml" filepath="$PROJECT_DIR$/springboot-aop-log/springboot-aop-log.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot-helloworld/springboot-helloworld.iml" filepath="$PROJECT_DIR$/springboot-helloworld/springboot-helloworld.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot-mapstruct/springboot-mapstruct.iml" filepath="$PROJECT_DIR$/springboot-mapstruct/springboot-mapstruct.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot-mybatis-plus/springboot-mybatis-plus.iml" filepath="$PROJECT_DIR$/springboot-mybatis-plus/springboot-mybatis-plus.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot-redis/springboot-redis.iml" filepath="$PROJECT_DIR$/springboot-redis/springboot-redis.iml" />
+    </modules>
+  </component>
+</project>

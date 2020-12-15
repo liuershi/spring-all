@@ -1,0 +1,38 @@
+logging:
+  level:
+    cn.infocore.springboot.redis.mapper: debug
+
+spring:
+  datasource:
+    username: root
+    password: Infocore`1q
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://192.168.13.165/springboot_mybatis_plus?createDatabaseIfNotExist=true&useSSL=false&serverTimezone=UTC
+    type: com.alibaba.druid.pool.DruidDataSource
+
+  redis:
+    database: 1
+    host: 192.168.13.169
+    port: 6379
+    timeout: 1000s #springboot 2.0之后需要指明单位
+    jedis:
+      pool:
+        # 最大空闲连接数
+        max-idle: 500
+        # 最小空闲连接数
+        min-idle: 50
+        # 等待可用连接最大时间，负数即不受限制
+        max-wait: -1
+        # 最大活跃连接数，负数为不限制
+        max-active: -1
+  cache:
+    redis:
+      time-to-live: -1 #毫秒
+
+mybatis-plus:
+  configuration:
+    # 开启二级缓存
+    cache-enabled: true
+  global-config:
+    db-config:
+      id-type: auto
