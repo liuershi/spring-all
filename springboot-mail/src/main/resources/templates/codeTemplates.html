@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>短信验证码模板</title>
+</head>
+<body>
+    <h1 style="color: cornflowerblue">
+        您好，您的短信验证码为
+        <span style="color: red" th:text="${code}"></span>
+        ，请在两分钟时间内完成操作。
+    </h1>
+</body>
+</html>
