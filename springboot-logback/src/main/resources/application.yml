@@ -1,0 +1,6 @@
+logging:
+  # 注意，file和path属性不会同时生效，只设置一个属性即可
+#  file: my.log
+  path: springboot-logback/src/main/resources/log
+  level:
+    cn.infocore.springboot.logback.controller: debug

@@ -3,6 +3,7 @@ package cn.infocore.springboot.redis;
 import cn.infocore.springboot.redis.domain.UserDO;
 import cn.infocore.springboot.redis.mapper.UserMapper;
 import cn.infocore.springboot.redis.service.UserService;
+import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.session.SqlSessionFactory;
@@ -69,5 +70,39 @@ public class TestRedis {
     public void test3(){
         stringRedisTemplate.opsForValue().set("k1", "v1");
         System.out.println(stringRedisTemplate.opsForValue().get("k1"));
+    }
+
+    @Test
+    public void testUpdate(){
+        SqlSession sqlSession = factory.openSession();
+        UserMapper mapper = sqlSession.getMapper(UserMapper.class);
+
+        // 先查询
+        UserDO userDO = mapper.selectById(2L);
+        System.out.println(userDO);
+        // 执行修改操作
+        UserDO user = new UserDO();
+        user.setId(3L);
+        user.setName("王五test");
+        user.setPassword("89898989");
+        mapper.updateById(user);
+        // 再执行相同查询
+        UserDO userDOTwo = mapper.selectById(2L);
+        System.out.println(userDOTwo);
+    }
+
+    /**
+     * 通过两个不同的SqlSession执行相同的sql语句
+     */
+    @Test
+    public void moreSqlSession(){
+        SqlSession sqlSessionOne = factory.openSession();
+        SqlSession sqlSessionTwo = factory.openSession();
+
+        UserMapper mapperOne = sqlSessionOne.getMapper(UserMapper.class);
+        UserMapper mapperTwo = sqlSessionTwo.getMapper(UserMapper.class);
+
+        System.out.println(mapperOne.selectById(1L));
+        System.out.println(mapperTwo.selectById(1L));
     }
 }
