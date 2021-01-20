@@ -1,0 +1,13 @@
+spring:
+  datasource:
+    url: jdbc:mysql://192.168.13.165:3306/springboot_excel?createDatabaseIfNotExist=true&useSSL=false&serverTimezone=Asia/Shanghai
+    username: root
+    password: Infocore`1q
+    type: com.zaxxer.hikari.HikariDataSource
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+mybatis-plus:
+  global-config:
+    db-config:
+      id-type: auto
+  type-enums-package: cn.infocore.excel.myenum
