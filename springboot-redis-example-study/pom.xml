@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>cn.infocore.redis.example</groupId>
+    <artifactId>springboot-redis-example-study</artifactId>
+    <packaging>pom</packaging>
+    <version>1.0-SNAPSHOT</version>
+    <modules>
+        <module>springboot-redis-example-one</module>
+    </modules>
+
+    <description>
+        Simple learning of springboot integration redis
+    </description>
+
+    <properties>
+        <project.build.sourceEncoding>1.8</project.build.sourceEncoding>
+        <maven.source.source>1.8</maven.source.source>
+        <maven.source.target>1.8</maven.source.target>
+        <spring.boot.version>2.2.2.RELEASE</spring.boot.version>
+        <java.version>1.8</java.version>
+        <lombok.version>1.18.10</lombok.version>
+        <mybatis.connection.version>8.0.19</mybatis.connection.version>
+        <mybatis.plus.version>3.4.2</mybatis.plus.version>
+    </properties>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-dependencies</artifactId>
+                <version>${spring.boot.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.projectlombok</groupId>
+                <artifactId>lombok</artifactId>
+                <version>${lombok.version}</version>
+                <optional>true</optional>
+            </dependency>
+            <dependency>
+                <groupId>com.baomidou</groupId>
+                <artifactId>mybatis-plus-boot-starter</artifactId>
+                <version>${mybatis.plus.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>mysql</groupId>
+                <artifactId>mysql-connector-java</artifactId>
+                <version>${mybatis.connection.version}</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>${maven.source.source}</source>
+                    <target>${maven.source.target}</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+</project>

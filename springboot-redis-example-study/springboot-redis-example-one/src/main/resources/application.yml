@@ -1,0 +1,50 @@
+server:
+  port: 8000
+
+spring:
+  # 单机redis配置
+#  redis:
+#    host: 192.168.13.165
+#    port: 6379
+#    database: 0
+
+  redis:
+    # 哨兵模式redis配置
+#    sentinel:
+#      # 该值是sentinel.conf配置文件中监听的master的名称
+#      master: mymaster
+#      # 注意：node节点指哨兵，其端口为26379
+#      nodes:
+#        - 192.168.13.161:26379
+#        - 192.168.13.163:26379
+#        - 192.168.13.165:26379
+
+    # 集群模式的配置
+    cluster:
+      nodes:
+        - 192.168.13.161:6380
+        - 192.168.13.161:6381
+        - 192.168.13.161:6382
+        - 192.168.13.161:6383
+        - 192.168.13.161:6384
+        - 192.168.13.161:6385
+
+  datasource:
+    username: root
+    password: Infocore`1q
+    url: jdbc:mysql://192.168.13.165/springboot_redis?createDatabaseIfNotExist=true&useSSL=false&serverTimezone=Asia/Shanghai
+    type: com.alibaba.druid.pool.DruidDataSource
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+    cache-enabled: true
+#  type-aliases-package: cn.infocore.redis.example.domain
+#  mapper-locations: classpath:mappers/*.xml
+logging:
+  level:
+    cn:
+      infocore:
+        redis:
+          example: debug
