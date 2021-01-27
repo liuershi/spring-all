@@ -1,0 +1,14 @@
+# 单机rabbitmq配置
+#spring:
+#  rabbitmq:
+#    host: 192.168.13.169
+#    port: 5672
+#    username: admin
+#    password: 123456
+
+# 集群配置，每个节点直接需要用逗号隔开
+spring:
+  rabbitmq:
+    addresses: 192.168.13.169:5672,192.168.13.169:5673
+    username: admin
+    password: 123456
